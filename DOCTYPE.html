@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Tebak Angka</title>
+</head>
+
+<body>
+<div style="text-align: center;">
+<h1>Yowww Bro, Welcome to Tebak Angka!</h1>
+<p>Skuy tebak angka antara 1 sampai 7:</p>
+<input type="text" id="tebakan" placeholder="masukkan tebakan disini">
+<button onclick="cekTebakan()">Tebak</button>
+<p id="hasil"></p>
+
+<script>
+function cekTebakan() {
+var tebakan = document.getElementById('tebakan').value;
+var angka = Math.floor(Math.random() * 7) + 1; // Angka random antara 1 sampai 7
+if (tebakan == angka) {
+document.getElementById('hasil').innerHTML = "Selamat, tebakanmu benar!";
+} else {
+document.getElementById('hasil').innerHTML = "Salah cuy, angka yang benar adalah " + angka;
+}
+}
+</script>
+<img src="https://1.bp.blogspot.com/-LYZNYFAkvXI/X5l4swSOgUI/AAAAAAAACis/gdqUoVqfs1gQ-kbnZlYC_oUEuAt0VvUMgCLcBGAsYHQ/s1352/1603888202050_761899298.jpg" width="600" height="300" alt="meme berfikir">
+</div>
+
+<div style="text-align: right;">
+<p>By : Adib</p>
+</div>
+</body>
+</html>
