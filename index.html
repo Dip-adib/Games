@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!GameTebakAngka html>
 <html>
 <head>
 <title>Game Tebak Angka</title>
@@ -6,16 +6,16 @@
 
 <body>
 <div style="text-align: center;">
-<h1>Yowww Bro, Welcome to Tebak Angka!</h1>
-<p>Skuy tebak angka antara 1 sampai 7:</p>
-<input type="text" id="tebakan" placeholder="masukkan tebakan disini">
-<button onclick="cekTebakan()">Tebak</button>
-<p id="hasil"></p>
+<h1 style="font-size: 24px;">Yowww Bro, Welcome to Tebak Angka!</h1>
+<p style="font-size: 18px;">Skuy tebak angka antara 1 sampai 20:</p>
+<input type="text" id="tebakan" style="font-size: 20px;" placeholder="masukkan tebakan disini">
+<button onclick="cekTebakan()" style="font-size: 20px;">Tebak</button>
+<p id="hasil" style="font-size: 16px;"></p>
 
 <script>
 function cekTebakan() {
 var tebakan = document.getElementById('tebakan').value;
-var angka = Math.floor(Math.random() * 7) + 1; // Angka random antara 1 sampai 7
+var angka = Math.floor(Math.random() * 20) + 1; // Angka random antara 1 sampai 20
 if (tebakan == angka) {
 document.getElementById('hasil').innerHTML = "Selamat, tebakanmu benar!";
 } else {
